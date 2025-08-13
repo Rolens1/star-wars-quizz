@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+    @apply text-3xl font-bold text-yellow-400 mb-6 text-center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.question-form {
+    @apply bg-gray-800 p-8 rounded-lg shadow-lg flex flex-col gap-6 max-w-md mx-auto;
+}
+
+.question-form p {
+    @apply text-white text-lg font-semibold mb-4;
+}
+
+.question-form label {
+    @apply text-gray-300 text-base mb-2 block;
+}
+
+.question-form input {
+    @apply w-full p-2 rounded border border-gray-600 bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400;
 }
